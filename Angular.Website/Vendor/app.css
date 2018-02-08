@@ -1,0 +1,63 @@
+body {
+    background-color: #C6D9F1;
+}
+
+.wizard {
+    border-radius: 15px 0 0 0;
+    background: #d4cdcd;
+}
+
+.wizard a {
+    background: #d4cdcd;
+    display: inline-block;
+    margin-right: -15px;
+    min-width: 165px;
+    outline: none;
+    padding: 10px 40px 10px;
+    position: relative;
+    text-decoration: none;
+    border-radius: 15px 0 0 0;
+}
+
+.borderedTab {
+    border-left: 2px solid #C6D9F1;
+}
+
+.wizard .active {
+    background: #007ACC;
+    color: #fff;
+}
+
+form {
+    background-color: #A4C8E8;
+    border-radius: 2px;
+    box-shadow: 0 1px 1px #ccc;
+    color: #404040;
+    font-size: 16px;
+    padding: 30px 20px;
+}
+
+form legend {
+    color: #404040;
+    font-size: 30px;
+    font-family: 'cookie', 'cursive';
+    font-weight: normal;
+    line-height: 1;
+    text-shadow: 0 3px 0 #000000;
+    text-shadow: 0 3px 0 rgba(0,0,0,0.1);
+}
+
+.chart {
+    width: 100%;
+    height: 300px;
+}
+
+   video {
+    width: 560px;
+    height: 340px;
+    position: relative;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px black;
+}

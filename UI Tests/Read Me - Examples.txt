@@ -1,0 +1,72 @@
+﻿addButton = element(by.buttonText('Add'));
+
+tagsList = element.all(by.repeater('vm.product.tags'));
+expect(tagsList.get(0).getText()).toMatch(newTag);
+
+element(by.model('vm.newTags')).sendKeys(newTag);
+
+var heading = element(by.css('.panel-heading'));
+
+var heading = element(by.tagName('legend'));
+
+var css = ProductPage.SaveButton.getAttribute('disabled');
+
+CostInput = element(by.name('inputCost'));
+
+
+PriceInput = element(by.name('inputPrice'));
+expect(PriceInput.getAttribute('value')).toBe("16.5");
+
+Price = element(by.model('vm.product.price'));
+expect(Price.getAttribute('value')).toBe('16.5');
+
+
+var list = element.all(by.css('.panel-body table tr td img'));
+expect(list.get(0).getAttribute('title')).toMatch('Leaf Rake');
+
+
+  
+var link = productNames.get(0);
+
+var productName = productNames
+    .get(0)
+    .getAttribute('linkText')
+    .getText();
+
+-- For logging out to console to this when debugging
+productName.getText().then(function (inputValue) {
+    console.log(inputValue);
+});
+
+
+var productnNames = element.all(by.repeater('product in vm.products').column('productCode'));
+expect(productnNames.get(0).getText()).toMatch('GDN-0011');
+
+
+-- For non Angular webistes see below example spec
+
+describe('Procurement home page:', function () {
+   
+    beforeEach(function () {
+        browser.driver.ignoreSynchronization = true;							-- Required
+
+        browser.driver.get('http://lth54uat01/SupplyChainProcurementTest');		-- Note difference, it's browser.driver rather than browser.get
+        
+    });
+
+    ////////
+
+    it('has search button', function () {
+        var btn = browser.driver.findElement(by.id("baSearch"));
+        
+        var search = browser.driver.findElement(by.id("searchTerm"));
+
+        search.sendKeys("p00012");
+
+        btn.click();
+        
+        //expect(btn.getText()).toBe('Search');
+
+        browser.driver.sleep(10000);
+    });
+});

@@ -1,0 +1,146 @@
+[
+  {
+    "description": "Datadriven EditTags Specs | should run data driven tests |  | ",
+    "assertions": [
+      {
+        "passed": true
+      }
+    ],
+    "duration": 1695
+  },
+  {
+    "description": "Datadriven EditTags Specs | Add button should add [This is Tag 1] search tag if tag entered |  | ",
+    "assertions": [
+      {
+        "passed": true
+      }
+    ],
+    "duration": 3580
+  },
+  {
+    "description": "Datadriven EditTags Specs | Add button should add [This is Tag 2] search tag if tag entered |  | ",
+    "assertions": [
+      {
+        "passed": true
+      }
+    ],
+    "duration": 3329
+  },
+  {
+    "description": "Datadriven EditTags Specs | Add button should add 2 new search tags |  | ",
+    "assertions": [
+      {
+        "passed": true
+      }
+    ],
+    "duration": 1934
+  },
+  {
+    "description": "Home Page Specs | test 1 |  | ",
+    "assertions": [
+      {
+        "passed": true
+      }
+    ],
+    "duration": 249
+  },
+  {
+    "description": "Home Page Specs | test 2 |  | ",
+    "assertions": [
+      {
+        "passed": true
+      }
+    ],
+    "duration": 448
+  },
+  {
+    "description": "Home Page Specs | test 3 |  | ",
+    "assertions": [
+      {
+        "passed": true
+      }
+    ],
+    "duration": 585
+  },
+  {
+    "description": "Home Page Specs | test 4 |  | ",
+    "assertions": [
+      {
+        "passed": true
+      }
+    ],
+    "duration": 401
+  },
+  {
+    "description": "Datadriven EditTags Specs | should run data driven tests |  | ",
+    "assertions": [
+      {
+        "passed": true
+      }
+    ],
+    "duration": 3534
+  },
+  {
+    "description": "Datadriven EditTags Specs | Add button should add [This is Tag 1] search tag if tag entered |  | ",
+    "assertions": [
+      {
+        "passed": true
+      }
+    ],
+    "duration": 7492
+  },
+  {
+    "description": "Datadriven EditTags Specs | Add button should add [This is Tag 2] search tag if tag entered |  | ",
+    "assertions": [
+      {
+        "passed": true
+      }
+    ],
+    "duration": 7286
+  },
+  {
+    "description": "Datadriven EditTags Specs | Add button should add 2 new search tags |  | ",
+    "assertions": [
+      {
+        "passed": true
+      }
+    ],
+    "duration": 7670
+  },
+  {
+    "description": "Home Page Specs | test 1 |  | ",
+    "assertions": [
+      {
+        "passed": true
+      }
+    ],
+    "duration": 1810
+  },
+  {
+    "description": "Home Page Specs | test 2 |  | ",
+    "assertions": [
+      {
+        "passed": true
+      }
+    ],
+    "duration": 2064
+  },
+  {
+    "description": "Home Page Specs | test 3 |  | ",
+    "assertions": [
+      {
+        "passed": true
+      }
+    ],
+    "duration": 3109
+  },
+  {
+    "description": "Home Page Specs | test 4 |  | ",
+    "assertions": [
+      {
+        "passed": true
+      }
+    ],
+    "duration": 2077
+  }
+]

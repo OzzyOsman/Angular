@@ -1,0 +1,13 @@
+﻿<div class="panel panel-primary">
+    <div class="panel-heading">{{ vm.title }}</div>
+    <div class="panel-body">
+        
+        <div class="wizard" style="background-color: white; margin: -5px 0 5px 0">
+            <button type="button" class="btn btn-sm btn-primary" ui-sref=".Info">Basic Information</button>
+            <button type="button" class="btn btn-sm btn-primary" ui-sref=".Price">Price Details</button>
+            <button type="button" class="btn btn-sm btn-primary" ui-sref=".Tags">Search Tags</button>
+        </div>
+
+        <div ui-view></div>
+    </div>
+</div>

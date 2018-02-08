@@ -1,0 +1,101 @@
+﻿<div class="row">
+    <div class="col-sm-12">
+        <div tabindex='0'>
+            <h4>Editable (Scoped)</h4>
+            <hr />
+        </div>
+        <div ng-repeat="fieldItem in vm.fieldArray">
+            <div class="col-sm-4">
+                <editable-scoped value="{{ fieldItem.Value }}" id="{{ fieldItem.Id }}" label="Value"/>
+                <editable-scoped value="{{ fieldItem.Cost }}" id="{{ fieldItem.Id }}" label="Cost" />
+            </div>
+        </div>
+    </div>
+</div>
+
+<br/><hr/><hr />
+
+<div class="row">
+    <!-- Example 1 -->
+    <div class="col-sm-6">
+        <h4>Attribute type directive - with template</h4>
+        <hr />
+        <attribute-One/>
+    </div>
+    <!-- Example 2 -->
+    <div class="col-sm-6">
+        <h4>Attribute type directive - wihtout template</h4>
+        <hr />
+        <attribute-Two/>
+        <attribute-Two/>
+    </div>
+</div>
+
+<br/>
+
+<!-- Example 3 -->
+<div class="row">
+    <div class="col-sm-12">
+        <h4>Attribute type directive- with template url</h4>
+        <hr />
+        <ul class="thumbnails" ng-repeat="event in vm.events">
+            <event-Template my-event="event"/>
+        </ul>
+    </div>
+</div>
+
+<br/><hr /><hr />
+
+<div class="row">
+    <!-- Example 4 -->
+    <div class="col-sm-3">
+        <h4>Scoped directive bound to parent scope controller</h4>
+        <hr />
+        <voting votescount="{{vm.votesCount}}" voteup="vm.voteUp()" votedown="vm.voteDown()"/>
+    </div>
+
+    <!-- Example 5 -->
+    <div class="col-sm-3">
+        <h4>Attribute directive to check keys entered on keydown event</h4>
+        <hr />
+        <input class="form-control input-sm" date-keys id="eventDate" type="text" required placeholder="formatt (dd/mm/yyyy)">
+    </div>
+
+    <!-- Example 6 -->
+    <div class="col-sm-2">
+        <h4>Directive with self contained controller</h4>
+        <hr />
+        <controller-directive-One/>
+    </div>
+
+    <!-- Example 7 -->
+    <div class="col-sm-2">
+        <h4>Directive with referenced controller</h4>
+        <hr />
+        <controller-directive-Two />
+    </div>
+
+    <!-- Example 8 -->
+    <div class="col-sm-2">
+        <h4>Multiple directives with shared controller</h4>
+        <hr />
+        <greetings-directive greetings-turkish greetings-finish/>
+        <greetings-directive greetings-turkish/>
+        <greetings-directive greetings-finish />
+        <greetings-directive />
+    </div>
+</div>
+
+<br/><hr /><hr />
+
+<div class="row">
+    <!-- Example 9 -->
+    <div class="col-sm-3">
+        <h5>Directive with transclusion</h5>
+        <collapsible title="{{ vm.mainEvent.Name }}"/>
+        <span>Date: {{ vm.mainEvent.Date }}</span><br/>
+        <span>Time: {{ vm.mainEvent.Time }}</span>
+    </div>
+</div>
+
+<br /><hr /><hr />

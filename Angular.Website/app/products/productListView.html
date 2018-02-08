@@ -1,0 +1,120 @@
+<div class="panel panel-info col-md-12" ng-controller="ProductListCtrl as vm">
+    <div class="panel-heading" style="font-size: large">
+        Product List
+    </div>
+    <br/>
+
+    <div class="panel-body" style="border: 1px solid silver; border-radius: 5px">
+        <div class="form-group form-inline">
+            <label class="col-sm-2 control-label">Filter on :</label>
+            <div class="col-sm-10 pull-left">
+                <select class="form-control input-sm" id="filterColumn" ng-model="vm.filterColumn" ng-change="vm.setOperators()" ng-options="column.Name for column in vm.tableColumns"></select>
+                &nbsp;
+                <select class="form-control input-sm" ng-model="vm.operator" ng-options="operator.Name for operator in vm.filterOperators"></select>
+                &nbsp;
+                <input class="form-control input-sm" ng-model="vm.filterValue" id="inputFilterValue" name="inputFilterValue" type="text" placeholder="Value"/>
+                &nbsp;
+                <button class="btn btn-sm btn-success" ng-click="vm.filterData()">
+                    Apply Filter&nbsp;
+                    <i class="glyphicon glyphicon-ok"></i>
+                </button>
+                &nbsp;
+                <button class="btn btn-sm btn-danger" id="Clear" ng-click="vm.resetFilter()">
+                    Clear Filter&nbsp;
+                    <i class="glyphicon glyphicon-trash"></i>
+                </button>
+            </div>
+        </div>
+        <br/>
+        <div class="form-group form-inline" ng-if="vm.sortProperty">
+            <label class="col-sm-2 control-label">Sort By :</label>
+            <div class="col-sm-10 pull-left">
+                {{ vm.sortProperty }}&nbsp;{{ vm.sortDirection }}
+            </div>
+        </div>
+    </div>
+    <br/>
+
+    <div class="panel-body" style="border: 1px solid gray; border-radius: 5px">
+        <table id="ProductsTable" class="table table-condensed table-bordered">
+            <thead>
+            <tr>
+                <td>
+                    <button type="button" class="btn btn-sm" ng-click="vm.toggleImage()">
+                        {{vm.showImage ? "Hide" : "Show"}} Image
+                        <i class="glyphicon glyphicon-picture"></i>
+                    </button>
+                </td>
+                <td>
+                    <button type="button" class="btn btn-sm pull-left" ng-class="{ sortColumn: vm.sortProperty == 'ProductName' }" ng-click="vm.setSort('ProductName')">
+                        Product Name
+                    </button>
+                    &nbsp;
+                    <div class="col-sm-2" ng-if="vm.sortProperty == 'ProductName'">
+                        <button type="button" class="btn btn-sm" ng-class="{ sort: vm.sortProperty == 'ProductName' }" ng-click="vm.toggleSortDirection()">
+                            <i ng-if="vm.sortDirection == 'asc'" class="glyphicon glyphicon-sort-by-attributes"></i>
+                            <i ng-if="vm.sortDirection == 'desc'" class="glyphicon glyphicon-sort-by-attributes-alt"></i>
+                        </button>
+                    </div>
+                </td>
+                <td>
+                    <button type="button" class="btn btn-sm pull-left" ng-class="{ sortColumn: vm.sortProperty == 'ProductCode' }" ng-click="vm.setSort('ProductCode')">
+                        Product Code
+                    </button>
+                    &nbsp;
+                    <div class="col-sm-2" ng-if="vm.sortProperty == 'ProductCode'">
+                        <button type="button" class="btn btn-sm" ng-class="{ sort: vm.sortProperty == 'ProductCode' }" ng-click="vm.toggleSortDirection()">
+                            <i ng-if="vm.sortDirection == 'asc'" class="glyphicon glyphicon-sort-by-attributes"></i>
+                            <i ng-if="vm.sortDirection == 'desc'" class="glyphicon glyphicon-sort-by-attributes-alt"></i>
+                        </button>
+                    </div>
+                </td>
+                <td>
+                    <button type="button" class="btn btn-sm pull-left" ng-class="{ sortColumn: vm.sortProperty == 'ReleaseDate' }" ng-click="vm.setSort('ReleaseDate')">
+                        Release Date
+                    </button>
+                    &nbsp;
+                    <div class="col-sm-2" ng-if="vm.sortProperty == 'ReleaseDate'">
+                        <button type="button" class="btn btn-sm" ng-class="{ sort: vm.sortProperty == 'ReleaseDate' }" ng-click="vm.toggleSortDirection()">
+                            <i ng-if="vm.sortDirection == 'asc'" class="glyphicon glyphicon-sort-by-attributes"></i>
+                            <i ng-if="vm.sortDirection == 'desc'" class="glyphicon glyphicon-sort-by-attributes-alt"></i>
+                        </button>
+                    </div>
+                </td>
+                <td>
+                    <button type="button" class="btn btn-sm pull-left" ng-class="{ sortColumn: vm.sortProperty == 'Price' }" ng-click="vm.setSort('Price')">
+                        Price
+                    </button>
+                    &nbsp;
+                    <div class="col-sm-2" ng-if="vm.sortProperty == 'Price'">
+                        <button type="button" class="btn btn-sm" ng-class="{ sort: vm.sortProperty == 'Price' }" ng-click="vm.toggleSortDirection()">
+                            <i ng-if="vm.sortDirection == 'asc'" class="glyphicon glyphicon-sort-by-attributes"></i>
+                            <i ng-if="vm.sortDirection == 'desc'" class="glyphicon glyphicon-sort-by-attributes-alt"></i>
+                        </button>
+                    </div>
+                </td>
+                <td></td>
+            </tr>
+            </thead>
+            <tbody>
+            <tr ng-repeat="product in vm.products">
+                <td>
+                    <img ng-if="vm.showImage" style="width: 50px; margin: 2px" ng-src="{{product.imageUrl}}" title="{{product.productName}}">
+                </td>
+                <td>
+                    <a ui-sref="productDetail({productId: product.productId})">{{ product.productName}}</a>
+                </td>
+                <td ng-click="vm.setCell(product.productCode)">{{ product.productCode }}</td>
+                <td ng-click="vm.setCell(product.releaseDate)">{{ product.releaseDate | date}}</td>
+                <td ng-click="vm.setCell(product.price)">{{ product.price }}</td>
+                <td>
+                    <button type="button" class="btn btn-warning btn-sm" ui-sref="productEdit.Info({productId: product.productId})">
+                        Edit&nbsp;
+                        <i class="glyphicon glyphicon-edit"></i>
+                    </button>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

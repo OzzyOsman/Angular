@@ -1,0 +1,28 @@
+https://angular.github.io/protractor/#/
+
+npm install -g protractor@2.3.0
+npm install -g grunt-cli
+
+webdriver-manager update
+webdriver-manager update --ie
+
+-- Replace IEDriverServer.exe with 32bit version but do not replace zip file
+
+
+-- (cmd window from project directory)
+npm install grunt@2.0.3 --save-dev --no-optional 
+npm install grunt-contrib-jshint@0.11.3 --save-dev --no-optional 
+npm install grunt-contrib-jasmine@0.9.1 --save-dev --no-optional 
+npm install grunt-contrib-clean@0.6.0 --save-dev --no-optional 
+npm install grunt-protractor-runner@2.1.0 --save-dev --no-optional 
+npm install protractor-multicapabilities-htmlreporter_v2@0.0.6 --save-dev --no-optional 
+
+--npm install grunt-concurrent --save-dev --no-optional 
+
+
+
+-- (in cmd window - leave open)
+webdriver-manager start --standalone 
+
+-- (new cmd window from project directory)
+to run: grunt test

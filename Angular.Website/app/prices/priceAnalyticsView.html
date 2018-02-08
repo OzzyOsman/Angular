@@ -1,0 +1,26 @@
+﻿<div class="content" ng-controller="priceAnalyticsCtrl as vm">
+    <div class="panel panel-primary">
+        <div class="panel-heading" style="font-size:large">{{ vm.title }}</div>
+
+        <div class="panel-body">
+
+            <div class="col-md-12">
+                <div ac-chart="'bar'"
+                     ac-data="vm.dataAmount"
+                     ac-config="vm.configAmount"
+                     class="chart">
+                </div>
+            </div>
+
+            <div class="col-md-12" ng-if="vm.dataResetBool == false">
+                <div ac-chart="'bar'"
+                     ac-data="vm.dataPercent"
+                     ac-config="vm.configPercent"
+                     class="chart">
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+

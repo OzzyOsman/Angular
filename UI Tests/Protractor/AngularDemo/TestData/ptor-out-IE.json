@@ -1,0 +1,452 @@
+[
+  {
+    "description": "Product - Edit specs | when Basic Information clicked should show Product Information | | ",
+    "assertions": [
+      {
+        "passed": true
+      }
+    ],
+    "duration": 6502
+  },
+  {
+    "description": "Product - Edit specs | when Price Details clicked should show Product Price Details | | ",
+    "assertions": [
+      {
+        "passed": true
+      }
+    ],
+    "duration": 7856
+  },
+  {
+    "description": "Product - Edit specs | when Search Tags clicked should show Product Search Tags | | ",
+    "assertions": [
+      {
+        "passed": true
+      }
+    ],
+    "duration": 9212
+  },
+  {
+    "description": "Product - Edit specs | when cancel button clicked should navigate to product list page | | ",
+    "assertions": [
+      {
+        "passed": true
+      }
+    ],
+    "duration": 7422
+  },
+  {
+    "description": "Product - Edit Info Specs | save button should be disabled when page first loaded | | ",
+    "assertions": [
+      {
+        "passed": true
+      }
+    ],
+    "duration": 7254
+  },
+  {
+    "description": "Product - Edit Info Specs | when only productName entered should NOT enable save button | | ",
+    "assertions": [
+      {
+        "passed": true
+      }
+    ],
+    "duration": 11384
+  },
+  {
+    "description": "Product - Edit Info Specs | when productName and Code entered should enable save button | | ",
+    "assertions": [
+      {
+        "passed": true
+      }
+    ],
+    "duration": 10541
+  },
+  {
+    "description": "Product - Edit Info Specs | when save button clicked should show success toast | | ",
+    "assertions": [
+      {
+        "passed": true
+      }
+    ],
+    "duration": 11170
+  },
+  {
+    "description": "Product - Edit Info Specs | when cancel button clicked should navigate to product list page | | ",
+    "assertions": [
+      {
+        "passed": true
+      }
+    ],
+    "duration": 8453
+  },
+  {
+    "description": "Home Page Specs | Has 5 links in Menu | |",
+    "assertions": [
+      {
+        "passed": true
+      }
+    ],
+    "duration": 4299
+  },
+  {
+    "description": "Home Page Specs | has Add Product link | | ",
+    "assertions": [
+      {
+        "passed": true
+      }
+    ],
+    "duration": 3996
+  },
+  {
+    "description": "Home Page Specs | can link to Add Product | | ",
+    "assertions": [
+      {
+        "passed": true
+      }
+    ],
+    "duration": 6881
+  },
+  {
+    "description": "Home Page Specs | has Add Price Analystics link | | ",
+    "assertions": [
+      {
+        "passed": true
+      }
+    ],
+    "duration": 6061
+  },
+  {
+    "description": "Home Page Specs | can link to Price Analystics | | ",
+    "assertions": [
+      {
+        "passed": true
+      }
+    ],
+    "duration": 6484
+  },
+  {
+    "description": "Home Page Specs | has Add Pop Over link | | ",
+    "assertions": [
+      {
+        "passed": true
+      }
+    ],
+    "duration": 4691
+  },
+  {
+    "description": "Home Page Specs | Can link to Pop Over | | ",
+    "assertions": [
+      {
+        "passed": true
+      }
+    ],
+    "duration": 6252
+  },
+  {
+    "description": "Home Page Specs | has Add Product List link | | ",
+    "assertions": [
+      {
+        "passed": true
+      }
+    ],
+    "duration": 4086
+  },
+  {
+    "description": "Home Page Specs | Can link to Product List | | ",
+    "assertions": [
+      {
+        "passed": true
+      }
+    ],
+    "duration": 6693
+  },
+  {
+    "description": "Product - Edit Tags Specs | Add button should add new search tag if tag entered | | ",
+    "assertions": [
+      {
+        "passed": true
+      }
+    ],
+    "duration": 10111
+  },
+  {
+    "description": "Product - Edit Tags Specs | Add button should show error toast if new search tag not entered | | ",
+    "assertions": [
+      {
+        "passed": true
+      }
+    ],
+    "duration": 5254
+  },
+  {
+    "description": "Product - Edit Tags Specs | tag button should remove new search tag when clicked | | ",
+    "assertions": [
+      {
+        "passed": true
+      }
+    ],
+    "duration": 6723
+  },
+  {
+    "description": "Product - Edit Tags Specs | when cancel button clicked should navigate to product list page | | ",
+    "assertions": [
+      {
+        "passed": true
+      }
+    ],
+    "duration": 5455
+  },
+  {
+    "description": "Product - Edit Price Specs | when MarkupPercent button clicked should change label and price option on view model | | ",
+    "assertions": [
+      {
+        "passed": true
+      }
+    ],
+    "duration": 8526
+  },
+  {
+    "description": "Product - Edit Price Specs | when MarkupAmount button clicked should change label and price option on view model | | ",
+    "assertions": [
+      {
+        "passed": true
+      }
+    ],
+    "duration": 8258
+  },
+  {
+    "description": "Product - Edit Price Specs | when Calculate button clicked should calculate Price if Markup Percent selected | | ",
+    "assertions": [
+      {
+        "passed": true
+      }
+    ],
+    "duration": 10709
+  },
+  {
+    "description": "Product - Edit Price Specs | when Calculate button clicked should calculate Price if Markup Percent selected | | ",
+    "assertions": [
+      {
+        "passed": true
+      }
+    ],
+    "duration": 8386
+  },
+  {
+    "description": "Product - Edit Price Specs | when Calculate button clicked should not calculate Price if Markup not entered | | ",
+    "assertions": [
+      {
+        "passed": true
+      }
+    ],
+    "duration": 7298
+  },
+  {
+    "description": "Product - Edit Price Specs | when cancel button clicked should navigate to product list page | | ",
+    "assertions": [
+      {
+        "passed": true
+      }
+    ],
+    "duration": 6044
+  },
+  {
+    "description": "Product - List  Filter Specs | should reset filters when Clear Filter is clicked | | ",
+    "assertions": [
+      {
+        "passed": true
+      }
+    ],
+    "duration": 8363
+  },
+  {
+    "description": "Product - List  Filter Specs | should filter by Product Name when \"Equals\" filter option selected, filter value entered and Apply Filter is clicked | | ",
+    "assertions": [
+      {
+        "passed": true
+      }
+    ],
+    "duration": 7169
+  },
+  {
+    "description": "Product - List  Filter Specs | should filter by Product Name when \"Contains\" filter option selected, filter value entered and Apply Filter is clicked | | ",
+    "assertions": [
+      {
+        "passed": true
+      }
+    ],
+    "duration": 7091
+  },
+  {
+    "description": "Product - List  Filter Specs| should filter by Product Name when \"Begins With\" filter option selected, filter value entered and Apply Filter is clicked | | ",
+    "assertions": [
+      {
+        "passed": true
+      }
+    ],
+    "duration": 7284
+  },
+  {
+    "description": "Product  - List  Filter Specs | should filter by Product Name when \"end With\" filter option selected, filter value entered and Apply Filter is clicked | | ",
+    "assertions": [
+      {
+        "passed": true
+      }
+    ],
+    "duration": 7103
+  },
+  {
+    "description": "Product - List  Filter Specs | should filter by Product Name when \"Not Equal\" filter option selected, filter value entered and Apply Filter is clicked | | ",
+    "assertions": [
+      {
+        "passed": true
+      }
+    ],
+    "duration": 6542
+  },
+  {
+    "description": "Product - List View Specs | should show all Products | | ",
+    "assertions": [
+      {
+        "passed": true
+      }
+    ],
+    "duration": 5430
+  },
+  {
+    "description": "Product - List View Specs | images should be shown when ShowImage button is clicked | | ",
+    "assertions": [
+      {
+        "passed": true
+      }
+    ],
+    "duration": 8850
+  },
+  {
+    "description": "Product - List View Specs | should show Product Names | | ",
+    "assertions": [
+      {
+        "passed": true
+      }
+    ],
+    "duration": 5922
+  },
+  {
+    "description": "Product - List View Specs | Should navigate to Product Detail Page when Product Name is clicked | | ",
+    "assertions": [
+      {
+        "passed": true
+      }
+    ],
+    "duration": 5495
+  },
+  {
+    "description": "Product - List View Specs | should sort by Product Name asc when Product Name is clicked | | ",
+    "assertions": [
+      {
+        "passed": true
+      }
+    ],
+    "duration": 4552
+  },
+  {
+    "description": "Product - List View Specs | should sort by Product Name desc when Product Name sort button is clicked | | ",
+    "assertions": [
+      {
+        "passed": true
+      }
+    ],
+    "duration": 5257
+  },
+  {
+    "description": "Product - List View Specs | should show Product Codes | | ",
+    "assertions": [
+      {
+        "passed": true
+      }
+    ],
+    "duration": 5118
+  },
+  {
+    "description": "Product - List View Specs | should sort by Product Code asc when Product Code is clicked | | ",
+    "assertions": [
+      {
+        "passed": true
+      }
+    ],
+    "duration": 4051
+  },
+  {
+    "description": "Product - List View Specs | should sort by Product Code desc when Product Code sort button is clicked | | ",
+    "assertions": [
+      {
+        "passed": true
+      }
+    ],
+    "duration": 5248
+  },
+  {
+    "description": "Product - List View Specs | should show Release Dates | | ",
+    "assertions": [
+      {
+        "passed": true
+      }
+    ],
+    "duration": 5445
+  },
+  {
+    "description": "Product - List View Specs | should sort by Release Date asc when Release Date is clicked | | ",
+    "assertions": [
+      {
+        "passed": true
+      }
+    ],
+    "duration": 4786
+  },
+  {
+    "description": "Product - List View Specs | should sort by Release Date desc when Release Date sort button is clicked | | ",
+    "assertions": [
+      {
+        "passed": true
+      }
+    ],
+    "duration": 5192
+  },
+  {
+    "description": "Product - List View Specs | should show Product Prices | | ",
+    "assertions": [
+      {
+        "passed": true
+      }
+    ],
+    "duration": 5394
+  },
+  {
+    "description": "Product - List View Specs | should sort by Product Price asc when Price is clicked | | ",
+    "assertions": [
+      {
+        "passed": true
+      }
+    ],
+    "duration": 4120
+  },
+  {
+    "description": "Product - List View Specs | should sort by Product Price desc when Product Price sort button is clicked | | ",
+    "assertions": [
+      {
+        "passed": true
+      }
+    ],
+    "duration": 5178
+  },
+  {
+    "description": "Product - List View Specs | Should navigate to Product Editor Page when Edit Button is clicked | | ",
+    "assertions": [
+      {
+        "passed": true
+      }
+    ],
+    "duration": 4129
+  }
+]

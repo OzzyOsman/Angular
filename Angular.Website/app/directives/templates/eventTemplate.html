@@ -1,0 +1,24 @@
+﻿<div class="col-sm-3">
+    <a href="{{ event.Name }}" style="margin-top: -20px !important">
+        <div class="well hoverwell" style="padding: 0px 30px 20px !important">
+            <div class="row">
+                <h3>{{ event.Name }}</h3>
+            </div>
+            <div class="row">
+                <span>Date:</span>
+                <span>{{ event.Date }}</span>
+            </div>
+            <div class="row">
+                <span>Time:</span>
+                <span>{{ event.Time }}</span>
+            </div>
+            <div class="row">
+                <span>Location:</span>
+                <span>{{ event.Location.Address }}</span>
+            </div>
+            <div class="row">
+                <span>{{ event.Location.City }}, {{ event.Location.Province }}</span>
+            </div>
+        </div>
+    </a>
+</div>
